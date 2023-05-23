@@ -1,0 +1,9 @@
+dbt_demo:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: abiding-hull-369419
+      dataset: DBT
+      threads: 10
